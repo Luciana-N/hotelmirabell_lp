@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: transparent;
+}
+
+/*Logo*/
+.logo a {
+  font-family: var(--fuenteLogo);
+  text-decoration: none;
+  color: #fcbf49;
+  font-size: 40px;
+  margin-right: auto; /* Esto alinea el logo a la izquierda */
+  margin-left: 0;   
+}
+.logo a:hover {
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+/*HERO*/
+.hero {
+  background-image: url(/src/assets/hotelfondo2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+.hero .content {
+  width: 90%;
+  max-width: 600px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  z-index: 10;
+}
+.hero .content h2 {
+  font-size: 65px;
+  font-weight: 700;
+}
+.hero .content p {
+  font-family: var(--fuenteHeading);
+  letter-spacing: 1.5px;
+  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.botonHero {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0.7rem;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: bold;
+  background-color: var(--colorPrimario);
+  border: 1.5px solid;
+  border-radius: 4px;
+  letter-spacing: 3px;
+  font-family: var(--fuenteHeading);
+}
+
+.botonHero:hover {
+  background-color: #ddb478;
+}
+
+/* Estilos */
+
+/* Estilos para Celular */
+@media (max-width: 767px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .logo a h1{
+    font-size: 2rem; 
+  }
+
+  .navbar {
+    padding: 2rem; 
+  }
+
+  .nav-list li a {
+    font-size: 1rem; 
+    margin: 5px; 
+  }
+
+  .hero .content h2 {
+    font-size: 40px; 
+  }
+
+  .hero .content p {
+    font-size: 18px; 
+  }
+
+  .botonHero {
+    font-size: 1rem; 
+    padding: 0.5rem; 
+  }
+}
+
+/* Estilos para Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .logo a h1{
+    font-size: 3rem;
+  }
+
+}

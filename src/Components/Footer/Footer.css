@@ -1,0 +1,57 @@
+footer {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem 8%;
+  background-color: #444444;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer h3 {
+  height: 4rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: var(--colorPrimario);
+  letter-spacing: 1.5px;
+}
+
+.copyright {
+  color: #fff;
+  font-family: var(--fuenteHeading);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin: 5px;
+}
+span {
+  color: var(--colorPrimario);
+  font-weight: bold;
+}
+
+/* Estilos para Celular */
+@media (max-width: 767px) {
+  footer {
+    padding: 1rem 5%; /* Ajusta el espaciado según tus necesidades */
+  }
+
+  footer h3 {
+    font-size: 2rem; /* Ajusta el tamaño del título según tus necesidades */
+  }
+
+  .copyright {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto según tus necesidades */
+  }
+}
+
+/* Estilos para Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Agrega estilos específicos para tablet si es necesario */
+}
+
+/* Estilos para Desktop */
+@media (min-width: 1024px) {
+  /* Agrega estilos específicos para desktop si es necesario */
+}

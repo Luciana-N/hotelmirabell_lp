@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'); /*Fuente Títulos*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap'); /*Fuente Logo*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap'); /*Fuente Texto*/
+
+:root {
+  --fuenteHeading: 'Playfair Display', serif;
+  --fuenteLogo: 'Dancing Script', cursive;
+  --fuenteTexto: 'Raleway', sans-serif;
+  --colorPrimario: #c48c38;
+  --colorTexto: #000;
+  --enviar: #80B752;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecbb6b;
+}
+
+h2, h3 {
+  font-family: var(--fuenteHeading);
+}
+
